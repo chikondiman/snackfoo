@@ -1,0 +1,127 @@
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("banner.jpg");
+
+  /* Set a specific height */
+  height: 700px;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+body {
+
+ 
+    color: white;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+h2 {background-color: teal;
+color: white;
+font-size: 10px;
+width: 170px;
+margin-bottom: 0px;
+font-weight: lighter;}
+
+th {
+  font-weight: lighter;
+  font-size: 12px;
+  color: grey;
+  text-align: center;
+}
+tr {
+    font-weight: lighter;
+    font-size: 12px;
+    color: grey;
+    text-align: center;
+
+}
+
+.t2 {
+ 
+  font-size: 6px;
+  text-align: center;
+
+}
+
+
+.t3 {
+ 
+  font-size: 8px;
+  text-align: center;
+
+}
+
+p{ font-size: 8px;
+text-align: center;
+color: grey;
+}
+header {
+  background-image: url(./banner.jpg);
+  color: grey;
+}
+
+.white {
+
+  background-color: white;
+}
+table {background-color: white;
+  color: grey;
+  font-size: 8px;
+  width: 170px;
+  margin-bottom: 0px;
+  font-weight: lighter;
+  text-align: center;}
+
+
+.button {
+  background-color: rgb(233, 233, 233);
+  width: 170px;  
+  color: black;
+  font-size: 8px;
+  padding: 10px;
+  border-radius: none;
+   line-height: 0;
+   font-weight: lighter;
+   display: inline;
+ 
+  margin-top:  0px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  border: none;
+  transition: transform .2s;
+  
+}
+
+.title {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 800px;
+  padding: 60px;
+}
+
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+.container{
+  column-count: 3;
+  display: grid;
+  grid-column-gap: 0px;
+
+
+  
+}
+
+.item2 {
+  grid-column-start: 2;
+  grid-column: 2;
+}
+
