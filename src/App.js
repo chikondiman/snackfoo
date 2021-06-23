@@ -1,12 +1,18 @@
 import logo from './logo.svg';
 import './styles.css';
 
+import React, { useState } from 'react';
 
 
 function App() {
 
 
-
+  function VoteSnack() {
+    // Declare a new state variable, which we'll call "count"
+    const [count, setCount] = useState(0);
+  
+  
+  }
 
   
   return (
@@ -34,11 +40,9 @@ function App() {
 
 <div className="container">
 
-<button onclick="activateLasers()">
-  Activate Lasers
-</button>
 
-<button onclick={this.voteSnack} className="button">Nabisco Oreo Cookies</button> 
+
+<button onClick={() => setCount(count + 1)} className="button">Nabisco Oreo Cookies</button> 
 
 <button className="button">General Mills Chex Mix</button>
 
@@ -62,7 +66,7 @@ function App() {
 
   <tr>
     <th>Selection</th>
-    <th>Votes</th>
+    <th>{count} </th>
  
   </tr>
   <tr>
