@@ -4,16 +4,24 @@ import './styles.css';
 import React, { useState } from 'react';
 
 
+
 function App() {
 
 
-  function VoteSnack() {
-    // Declare a new state variable, which we'll call "count"
-    const [count, setCount] = useState(0);
+  class VoteSnack extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = { snack: "oreo", vote: 5 };
+      this.changeName = this.changeName.bind(this);
+    }
+   
   
+    addVote(vote) {
+      this.setState({ vote: vote + 1 });
+    }
+   
   
   }
-
   
   return (
     <div className="App">
@@ -42,7 +50,7 @@ function App() {
 
 
 
-<button onClick={() => setCount(count + 1)} className="button">Nabisco Oreo Cookies</button> 
+<button onClick="addVote()" className="button">Nabisco Oreo Cookies</button> 
 
 <button className="button">General Mills Chex Mix</button>
 
@@ -66,12 +74,12 @@ function App() {
 
   <tr>
     <th>Selection</th>
-    <th>{count} </th>
+    <th> Vote </th>
  
   </tr>
   <tr>
     <td>Nabisco Oreo Cookies</td>
-    <td>0</td>
+    <td>{this.state.vote}</td>
 
   </tr>
   <tr>
