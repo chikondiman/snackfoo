@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './styles.css';
-import Greet from './Greet'
+import Poll from './Poll'
 import React, { useState } from 'react';
 
 
@@ -44,7 +44,7 @@ function App() {
 
 <div className="container">
 
-
+<Poll/>
 <button onClick={incrementCount} className="button">Nabisco Oreo Cookies</button> 
 
 <button className="button">General Mills Chex Mix</button>

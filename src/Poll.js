@@ -1,10 +1,39 @@
 import React from 'react';
 
-class Snacks extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = { name: 'Nabisco Oreo Cookies' };
+
+
+class Poll extends React.Component
+
+{
+  
+  constructor(props) {
+    super(props)
+    this.state = {
+      vote: 0,
+      count: 0,
+      snack: this.props.snack
     }
 
+      
+  const snack = this.props.snack;
+  const count = this.props.count;
+  const vote = this.props.count;
 
-    ReactDOM.render(<Snacks />, document.getElementById('app'));
+
+  }
+  render() {
+
+
+    
+        return(
+          <div>
+              <h1>Score: {this.snack}</h1>
+              <h1>Count: {this.vote}</h1>
+          </div>
+       );
+        }
+    
+
+
+      }
+export default Poll; 
