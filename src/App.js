@@ -1,32 +1,28 @@
 import logo from './logo.svg';
 import './styles.css';
-
+import Greet from './Greet'
 import React, { useState } from 'react';
+
 
 
 
 function App() {
 
+  const [count, setCount] = useState(0)
 
-  class VoteSnack extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = { snack: "oreo", vote: 5 };
-      this.changeName = this.changeName.bind(this);
-    }
-   
-  
-    addVote(vote) {
-      this.setState({ vote: vote + 1 });
-    }
-   
-  
+  function decrementCount() {
+    setCount(prevCount => prevCount - 1)
   }
-  
+
+  function incrementCount() {
+    setCount(prevCount => prevCount + 1)
+  }
+
   return (
+  
     <div className="App">
 
-  
+
       <header className="App-header">
 
      
@@ -49,8 +45,7 @@ function App() {
 <div className="container">
 
 
-
-<button onClick="addVote()" className="button">Nabisco Oreo Cookies</button> 
+<button onClick={incrementCount} className="button">Nabisco Oreo Cookies</button> 
 
 <button className="button">General Mills Chex Mix</button>
 
@@ -79,7 +74,7 @@ function App() {
   </tr>
   <tr>
     <td>Nabisco Oreo Cookies</td>
-    <td>{this.state.vote}</td>
+    <td> {count}</td>
 
   </tr>
   <tr>
