@@ -45,7 +45,7 @@ function App() {
 <div className="container">
 
 <Poll/>
-<button onClick={incrementCount} className="button">Nabisco Oreo Cookies</button> 
+
 
 <button className="button">General Mills Chex Mix</button>
 

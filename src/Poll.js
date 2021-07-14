@@ -2,7 +2,8 @@ import React from 'react';
 
 
 
-class Poll extends React.Component
+
+export default class Poll extends React.Component
 
 {
   
@@ -11,29 +12,22 @@ class Poll extends React.Component
     this.state = {
       vote: 0,
       count: 0,
-      snack: this.props.snack
+      snack: "Nabisco Oreo Cookies"
     }
 
-      
-  const snack = this.props.snack;
-  const count = this.props.count;
-  const vote = this.props.count;
+    function castVote() {
+      this.state.vote = this.state.vote + 1
+    }
 
 
   }
+
   render() {
+   return 
 
 
-    
-        return(
-          <div>
-              <h1>Snack: {this.snack}</h1>
-              <h1>Votes: {this.vote}</h1>
-          </div>
-       );
-        }
-    
+ <button onClick={this.castVote} className="button">{this.state.snack}</button> 
 
+   
 
-      }
-export default Poll; 
+};
