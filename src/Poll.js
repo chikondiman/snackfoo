@@ -27,7 +27,7 @@ class Poll extends React.Component
     
         return(
           <div>
-              <h1>Score: {this.snack}</h1>
+              <h1>snack: {this.snack}</h1>
               <h1>Count: {this.vote}</h1>
           </div>
        );
