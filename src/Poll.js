@@ -15,14 +15,16 @@ export default class Poll extends React.Component
       snack: "Nabisco Oreo Cookies"
     }
 
-  }
+  
 
     function castVote() {
       this.state.vote = this.state.vote + 1
     }
 
 
-  }
+  } 
+};
+
 
   render() {
    return 
