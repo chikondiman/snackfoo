@@ -14,6 +14,7 @@ export default class Poll extends React.Component
       count: 0,
       snack: "Nabisco Oreo Cookies"
     }
+  
 
   
 
@@ -21,8 +22,6 @@ export default class Poll extends React.Component
       this.state.vote = this.state.vote + 1
     }
 
-
-  } 
 };
 
 
