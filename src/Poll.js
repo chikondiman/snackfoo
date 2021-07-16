@@ -33,4 +33,3 @@ export default class Poll extends React.Component
 
 );
 
-}
