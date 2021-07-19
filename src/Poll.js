@@ -3,7 +3,7 @@ import React from 'react';
 
 
 
- class Poll extends React.Component
+export default class Poll extends React.Component
 
 {
   
