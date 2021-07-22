@@ -10,8 +10,8 @@ export default class Poll extends React.Component
   constructor(props) {
     super(props)
     this.state = {
-      vote: 0,
-      count: 0,
+      vote: 3,
+      count: 3,
       snack: "Nabisco Oreo Cookies"
     }
   
