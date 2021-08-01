@@ -74,7 +74,7 @@ function App() {
   </tr>
   <tr>
     <td>Nabisco Oreo Cookies</td>
-    <td> 0 {count}</td>
+    <td> {count}</td>
 
   </tr>
   <tr>
